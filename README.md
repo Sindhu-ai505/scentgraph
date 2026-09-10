@@ -1,7 +1,7 @@
 ---
 title: ScentGraph — Molecule-to-Scent GNN
 emoji: 🧪
-colorFrom: cyan
+colorFrom: blue
 colorTo: indigo
 sdk: docker
 app_port: 8080
