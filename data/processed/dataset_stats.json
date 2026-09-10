@@ -1,0 +1,286 @@
+{
+  "total_molecules": 5070,
+  "total_unique_labels": 157,
+  "min_label_occurrence_threshold": 30,
+  "avg_labels_per_molecule": 4.89,
+  "median_labels_per_molecule": 4,
+  "max_labels_per_molecule": 20,
+  "label_frequencies": {
+    "fruity": 1926,
+    "sweet": 1461,
+    "green": 1456,
+    "floral": 1125,
+    "herbal": 761,
+    "woody": 680,
+    "fatty": 601,
+    "fresh": 536,
+    "waxy": 488,
+    "spicy": 461,
+    "sulfur": 400,
+    "tropical": 394,
+    "citrus": 383,
+    "oily": 383,
+    "nutty": 363,
+    "rose": 338,
+    "earthy": 334,
+    "apple": 318,
+    "roasted": 306,
+    "balsamic": 304,
+    "meaty": 292,
+    "vegetable": 289,
+    "ethereal": 286,
+    "minty": 248,
+    "caramel": 232,
+    "winey": 216,
+    "pineapple": 206,
+    "pungent": 205,
+    "odorless": 204,
+    "musty": 203,
+    "burnt": 186,
+    "garlic": 185,
+    "creamy": 184,
+    "cheesy": 182,
+    "onion": 181,
+    "phenolic": 180,
+    "milky": 173,
+    "powdery": 166,
+    "berry": 154,
+    "honey": 148,
+    "aldehydic": 144,
+    "fermented": 143,
+    "dry": 142,
+    "buttery": 137,
+    "metallic": 131,
+    "pear": 131,
+    "banana": 129,
+    "melon": 129,
+    "camphoreous": 127,
+    "savory": 126,
+    "leafy": 124,
+    "animal": 123,
+    "cocoa": 117,
+    "cognac": 112,
+    "vanilla": 110,
+    "coffee": 109,
+    "alcoholic": 106,
+    "mushroom": 100,
+    "tobacco": 100,
+    "almond": 97,
+    "orange": 96,
+    "warm": 96,
+    "peach": 96,
+    "musk": 94,
+    "coconut": 93,
+    "jasmin": 91,
+    "grape": 90,
+    "clean": 89,
+    "anise": 87,
+    "bland": 86,
+    "cherry": 83,
+    "amber": 82,
+    "pine": 82,
+    "fishy": 78,
+    "apricot": 77,
+    "aromatic": 76,
+    "ripe": 74,
+    "hay": 74,
+    "violet": 73,
+    "medicinal": 72,
+    "grapefruit": 72,
+    "cooling": 70,
+    "chocolate": 69,
+    "smoky": 69,
+    "mild": 67,
+    "sour": 66,
+    "lemon": 61,
+    "solvent": 61,
+    "lily": 61,
+    "cooked": 61,
+    "potato": 61,
+    "plum": 60,
+    "rum": 60,
+    "coumarinic": 59,
+    "orris": 59,
+    "grassy": 58,
+    "tea": 58,
+    "soap": 57,
+    "bark": 57,
+    "gasoline": 56,
+    "rummy": 55,
+    "geranium": 55,
+    "brown": 55,
+    "leathery": 54,
+    "hyacinth": 53,
+    "hazelnut": 52,
+    "muguet": 52,
+    "black": 51,
+    "chicken": 50,
+    "strawberry": 50,
+    "cinnamon": 49,
+    "cabbage": 49,
+    "ketonic": 48,
+    "cucumber": 48,
+    "estery": 46,
+    "lactonic": 46,
+    "currant": 43,
+    "jasmine": 43,
+    "skin": 43,
+    "weedy": 43,
+    "lavender": 43,
+    "brandy": 42,
+    "raspberry": 40,
+    "nut": 40,
+    "beefy": 40,
+    "terpenic": 40,
+    "cedar": 39,
+    "bitter": 38,
+    "tomato": 38,
+    "bready": 38,
+    "popcorn": 37,
+    "juicy": 36,
+    "bread": 36,
+    "brothy": 36,
+    "acidic": 36,
+    "celery": 36,
+    "herbaceous": 36,
+    "sandalwood": 35,
+    "chemical": 35,
+    "licorice": 34,
+    "ozone": 34,
+    "camphor": 34,
+    "plastic": 34,
+    "vetiver": 33,
+    "radish": 33,
+    "grass": 33,
+    "hawthorn": 33,
+    "horseradish": 33,
+    "malty": 32,
+    "bergamot": 31,
+    "leaf": 31,
+    "chamomile": 31,
+    "peel": 30,
+    "orangeflower": 30,
+    "jammy": 30,
+    "peppery": 30,
+    "marine": 30
+  },
+  "top_25_labels": [
+    [
+      "fruity",
+      1926
+    ],
+    [
+      "sweet",
+      1461
+    ],
+    [
+      "green",
+      1456
+    ],
+    [
+      "floral",
+      1125
+    ],
+    [
+      "herbal",
+      761
+    ],
+    [
+      "woody",
+      680
+    ],
+    [
+      "fatty",
+      601
+    ],
+    [
+      "fresh",
+      536
+    ],
+    [
+      "waxy",
+      488
+    ],
+    [
+      "spicy",
+      461
+    ],
+    [
+      "sulfur",
+      400
+    ],
+    [
+      "tropical",
+      394
+    ],
+    [
+      "citrus",
+      383
+    ],
+    [
+      "oily",
+      383
+    ],
+    [
+      "nutty",
+      363
+    ],
+    [
+      "rose",
+      338
+    ],
+    [
+      "earthy",
+      334
+    ],
+    [
+      "apple",
+      318
+    ],
+    [
+      "roasted",
+      306
+    ],
+    [
+      "balsamic",
+      304
+    ],
+    [
+      "meaty",
+      292
+    ],
+    [
+      "vegetable",
+      289
+    ],
+    [
+      "ethereal",
+      286
+    ],
+    [
+      "minty",
+      248
+    ],
+    [
+      "caramel",
+      232
+    ]
+  ],
+  "source_distribution": {
+    "goodscents,leffingwell": 1486,
+    "goodscents": 1440,
+    "leffingwell": 1020,
+    "aromadb,goodscents,leffingwell": 378,
+    "flavornet,goodscents,leffingwell": 266,
+    "aromadb,flavornet,goodscents,leffingwell": 225,
+    "flavornet,goodscents": 90,
+    "aromadb": 55,
+    "aromadb,goodscents": 40,
+    "aromadb,flavornet,goodscents": 27,
+    "flavornet": 18,
+    "flavornet,leffingwell": 13,
+    "aromadb,leffingwell": 10,
+    "aromadb,flavornet,leffingwell": 1,
+    "aromadb,flavornet": 1
+  }
+}

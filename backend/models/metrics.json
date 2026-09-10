@@ -1,0 +1,3092 @@
+{
+  "timestamp": "2026-09-11 01:13:28",
+  "vocab_size": 157,
+  "total_molecules": 5070,
+  "split_sizes": {
+    "train": 4056,
+    "val": 507,
+    "test": 507
+  },
+  "models": {
+    "gatv2": {
+      "model_key": "gatv2",
+      "display_name": "ScentGATv2 (Attention)",
+      "macro_f1": 0.2169,
+      "micro_f1": 0.3242,
+      "test_loss": 0.2803,
+      "best_val_macro_f1": 0.1748,
+      "epochs_trained": 15,
+      "training_curves": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7573,
+          "val_loss": 0.3552,
+          "val_macro_f1": 0.0621,
+          "val_micro_f1": 0.2213
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.6298,
+          "val_loss": 0.331,
+          "val_macro_f1": 0.0987,
+          "val_micro_f1": 0.2551
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.5786,
+          "val_loss": 0.3343,
+          "val_macro_f1": 0.123,
+          "val_micro_f1": 0.2617
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.5477,
+          "val_loss": 0.3148,
+          "val_macro_f1": 0.1386,
+          "val_micro_f1": 0.2743
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.5255,
+          "val_loss": 0.3101,
+          "val_macro_f1": 0.1433,
+          "val_micro_f1": 0.2776
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.5094,
+          "val_loss": 0.3138,
+          "val_macro_f1": 0.1541,
+          "val_micro_f1": 0.2774
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.4943,
+          "val_loss": 0.3175,
+          "val_macro_f1": 0.1562,
+          "val_micro_f1": 0.2777
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.4886,
+          "val_loss": 0.3173,
+          "val_macro_f1": 0.1601,
+          "val_micro_f1": 0.2828
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.4786,
+          "val_loss": 0.3083,
+          "val_macro_f1": 0.1642,
+          "val_micro_f1": 0.2866
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.4681,
+          "val_loss": 0.3057,
+          "val_macro_f1": 0.1685,
+          "val_micro_f1": 0.2948
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.4657,
+          "val_loss": 0.2935,
+          "val_macro_f1": 0.1655,
+          "val_micro_f1": 0.2923
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.4566,
+          "val_loss": 0.3005,
+          "val_macro_f1": 0.1669,
+          "val_micro_f1": 0.2935
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.4512,
+          "val_loss": 0.3068,
+          "val_macro_f1": 0.1692,
+          "val_micro_f1": 0.2947
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.4438,
+          "val_loss": 0.3048,
+          "val_macro_f1": 0.1711,
+          "val_micro_f1": 0.2918
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.4402,
+          "val_loss": 0.2932,
+          "val_macro_f1": 0.1748,
+          "val_micro_f1": 0.2991
+        }
+      ],
+      "optimal_thresholds": {
+        "fruity": 0.4,
+        "sweet": 0.4,
+        "green": 0.45,
+        "floral": 0.55,
+        "herbal": 0.55,
+        "woody": 0.75,
+        "fatty": 0.7,
+        "fresh": 0.55,
+        "waxy": 0.6,
+        "spicy": 0.4,
+        "sulfur": 0.45,
+        "tropical": 0.5,
+        "citrus": 0.55,
+        "oily": 0.55,
+        "nutty": 0.8,
+        "rose": 0.75,
+        "earthy": 0.7,
+        "apple": 0.8,
+        "roasted": 0.8,
+        "balsamic": 0.7,
+        "meaty": 0.8,
+        "vegetable": 0.7,
+        "ethereal": 0.8,
+        "minty": 0.8,
+        "caramel": 0.8,
+        "winey": 0.65,
+        "pineapple": 0.6,
+        "pungent": 0.6,
+        "odorless": 0.7,
+        "musty": 0.6,
+        "burnt": 0.8,
+        "garlic": 0.7,
+        "creamy": 0.6,
+        "cheesy": 0.6,
+        "onion": 0.75,
+        "phenolic": 0.8,
+        "milky": 0.6,
+        "powdery": 0.8,
+        "berry": 0.55,
+        "honey": 0.65,
+        "aldehydic": 0.55,
+        "fermented": 0.7,
+        "dry": 0.75,
+        "buttery": 0.8,
+        "metallic": 0.6,
+        "pear": 0.8,
+        "banana": 0.7,
+        "melon": 0.8,
+        "camphoreous": 0.55,
+        "savory": 0.8,
+        "leafy": 0.4,
+        "animal": 0.7,
+        "cocoa": 0.35,
+        "cognac": 0.8,
+        "vanilla": 0.7,
+        "coffee": 0.8,
+        "alcoholic": 0.8,
+        "mushroom": 0.5,
+        "tobacco": 0.7,
+        "almond": 0.35,
+        "orange": 0.45,
+        "warm": 0.5,
+        "peach": 0.65,
+        "musk": 0.35,
+        "coconut": 0.35,
+        "jasmin": 0.65,
+        "grape": 0.75,
+        "clean": 0.45,
+        "anise": 0.65,
+        "bland": 0.35,
+        "cherry": 0.5,
+        "amber": 0.75,
+        "pine": 0.75,
+        "fishy": 0.7,
+        "apricot": 0.8,
+        "aromatic": 0.55,
+        "ripe": 0.7,
+        "hay": 0.75,
+        "violet": 0.5,
+        "medicinal": 0.8,
+        "grapefruit": 0.6,
+        "cooling": 0.55,
+        "chocolate": 0.7,
+        "smoky": 0.8,
+        "mild": 0.25,
+        "sour": 0.6,
+        "lemon": 0.5,
+        "solvent": 0.8,
+        "lily": 0.5,
+        "cooked": 0.1,
+        "potato": 0.65,
+        "plum": 0.7,
+        "rum": 0.55,
+        "coumarinic": 0.65,
+        "orris": 0.55,
+        "grassy": 0.5,
+        "tea": 0.15,
+        "soap": 0.5,
+        "bark": 0.4,
+        "gasoline": 0.25,
+        "rummy": 0.65,
+        "geranium": 0.8,
+        "brown": 0.4,
+        "leathery": 0.8,
+        "hyacinth": 0.55,
+        "hazelnut": 0.1,
+        "muguet": 0.65,
+        "black": 0.15,
+        "chicken": 0.65,
+        "strawberry": 0.35,
+        "cinnamon": 0.8,
+        "cabbage": 0.7,
+        "ketonic": 0.65,
+        "cucumber": 0.8,
+        "estery": 0.8,
+        "lactonic": 0.45,
+        "currant": 0.35,
+        "jasmine": 0.55,
+        "skin": 0.25,
+        "weedy": 0.45,
+        "lavender": 0.5,
+        "brandy": 0.35,
+        "raspberry": 0.35,
+        "nut": 0.35,
+        "beefy": 0.35,
+        "terpenic": 0.35,
+        "cedar": 0.35,
+        "bitter": 0.35,
+        "tomato": 0.35,
+        "bready": 0.35,
+        "popcorn": 0.35,
+        "juicy": 0.35,
+        "bread": 0.35,
+        "brothy": 0.35,
+        "acidic": 0.35,
+        "celery": 0.35,
+        "herbaceous": 0.35,
+        "sandalwood": 0.35,
+        "chemical": 0.35,
+        "licorice": 0.35,
+        "ozone": 0.35,
+        "camphor": 0.35,
+        "plastic": 0.35,
+        "vetiver": 0.35,
+        "radish": 0.35,
+        "grass": 0.35,
+        "hawthorn": 0.35,
+        "horseradish": 0.35,
+        "malty": 0.35,
+        "bergamot": 0.35,
+        "leaf": 0.35,
+        "chamomile": 0.35,
+        "peel": 0.35,
+        "orangeflower": 0.35,
+        "jammy": 0.35,
+        "peppery": 0.35,
+        "marine": 0.35
+      },
+      "per_label_metrics": {
+        "fruity": {
+          "f1": 0.6863,
+          "precision": 0.6114,
+          "recall": 0.7821,
+          "threshold": 0.4,
+          "support": 179
+        },
+        "sweet": {
+          "f1": 0.5928,
+          "precision": 0.4962,
+          "recall": 0.736,
+          "threshold": 0.4,
+          "support": 178
+        },
+        "green": {
+          "f1": 0.5559,
+          "precision": 0.4505,
+          "recall": 0.7257,
+          "threshold": 0.45,
+          "support": 113
+        },
+        "floral": {
+          "f1": 0.573,
+          "precision": 0.5096,
+          "recall": 0.6543,
+          "threshold": 0.55,
+          "support": 81
+        },
+        "herbal": {
+          "f1": 0.4569,
+          "precision": 0.3486,
+          "recall": 0.663,
+          "threshold": 0.55,
+          "support": 92
+        },
+        "woody": {
+          "f1": 0.7111,
+          "precision": 0.7767,
+          "recall": 0.6557,
+          "threshold": 0.75,
+          "support": 122
+        },
+        "fatty": {
+          "f1": 0.5176,
+          "precision": 0.6286,
+          "recall": 0.44,
+          "threshold": 0.7,
+          "support": 50
+        },
+        "fresh": {
+          "f1": 0.3163,
+          "precision": 0.2168,
+          "recall": 0.5849,
+          "threshold": 0.55,
+          "support": 53
+        },
+        "waxy": {
+          "f1": 0.5352,
+          "precision": 0.4872,
+          "recall": 0.5938,
+          "threshold": 0.6,
+          "support": 32
+        },
+        "spicy": {
+          "f1": 0.3232,
+          "precision": 0.197,
+          "recall": 0.8983,
+          "threshold": 0.4,
+          "support": 59
+        },
+        "sulfur": {
+          "f1": 0.7117,
+          "precision": 0.5577,
+          "recall": 0.9831,
+          "threshold": 0.45,
+          "support": 59
+        },
+        "tropical": {
+          "f1": 0.3275,
+          "precision": 0.2205,
+          "recall": 0.6364,
+          "threshold": 0.5,
+          "support": 44
+        },
+        "citrus": {
+          "f1": 0.4031,
+          "precision": 0.2889,
+          "recall": 0.6667,
+          "threshold": 0.55,
+          "support": 39
+        },
+        "oily": {
+          "f1": 0.3678,
+          "precision": 0.32,
+          "recall": 0.4324,
+          "threshold": 0.55,
+          "support": 37
+        },
+        "nutty": {
+          "f1": 0.5698,
+          "precision": 0.6203,
+          "recall": 0.5269,
+          "threshold": 0.8,
+          "support": 93
+        },
+        "rose": {
+          "f1": 0.3704,
+          "precision": 0.3704,
+          "recall": 0.3704,
+          "threshold": 0.75,
+          "support": 27
+        },
+        "earthy": {
+          "f1": 0.2692,
+          "precision": 0.2258,
+          "recall": 0.3333,
+          "threshold": 0.7,
+          "support": 42
+        },
+        "apple": {
+          "f1": 0.4865,
+          "precision": 0.4091,
+          "recall": 0.6,
+          "threshold": 0.8,
+          "support": 30
+        },
+        "roasted": {
+          "f1": 0.612,
+          "precision": 0.5385,
+          "recall": 0.7089,
+          "threshold": 0.8,
+          "support": 79
+        },
+        "balsamic": {
+          "f1": 0.1818,
+          "precision": 0.1304,
+          "recall": 0.3,
+          "threshold": 0.7,
+          "support": 20
+        },
+        "meaty": {
+          "f1": 0.6353,
+          "precision": 0.6,
+          "recall": 0.675,
+          "threshold": 0.8,
+          "support": 80
+        },
+        "vegetable": {
+          "f1": 0.4531,
+          "precision": 0.3671,
+          "recall": 0.5918,
+          "threshold": 0.7,
+          "support": 49
+        },
+        "ethereal": {
+          "f1": 0.5526,
+          "precision": 0.4667,
+          "recall": 0.6774,
+          "threshold": 0.8,
+          "support": 31
+        },
+        "minty": {
+          "f1": 0.2913,
+          "precision": 0.1875,
+          "recall": 0.6522,
+          "threshold": 0.8,
+          "support": 23
+        },
+        "caramel": {
+          "f1": 0.4219,
+          "precision": 0.3103,
+          "recall": 0.6585,
+          "threshold": 0.8,
+          "support": 41
+        },
+        "winey": {
+          "f1": 0.4176,
+          "precision": 0.2754,
+          "recall": 0.8636,
+          "threshold": 0.65,
+          "support": 22
+        },
+        "pineapple": {
+          "f1": 0.5,
+          "precision": 0.3378,
+          "recall": 0.9615,
+          "threshold": 0.6,
+          "support": 26
+        },
+        "pungent": {
+          "f1": 0.3167,
+          "precision": 0.2135,
+          "recall": 0.6129,
+          "threshold": 0.6,
+          "support": 31
+        },
+        "odorless": {
+          "f1": 0.0667,
+          "precision": 0.037,
+          "recall": 0.3333,
+          "threshold": 0.7,
+          "support": 3
+        },
+        "musty": {
+          "f1": 0.2879,
+          "precision": 0.2111,
+          "recall": 0.4524,
+          "threshold": 0.6,
+          "support": 42
+        },
+        "burnt": {
+          "f1": 0.2394,
+          "precision": 0.1574,
+          "recall": 0.5,
+          "threshold": 0.8,
+          "support": 34
+        },
+        "garlic": {
+          "f1": 0.4348,
+          "precision": 0.2941,
+          "recall": 0.8333,
+          "threshold": 0.7,
+          "support": 24
+        },
+        "creamy": {
+          "f1": 0.1538,
+          "precision": 0.1,
+          "recall": 0.3333,
+          "threshold": 0.6,
+          "support": 21
+        },
+        "cheesy": {
+          "f1": 0.4578,
+          "precision": 0.3958,
+          "recall": 0.5429,
+          "threshold": 0.6,
+          "support": 35
+        },
+        "onion": {
+          "f1": 0.3896,
+          "precision": 0.2586,
+          "recall": 0.7895,
+          "threshold": 0.75,
+          "support": 19
+        },
+        "phenolic": {
+          "f1": 0.3944,
+          "precision": 0.3111,
+          "recall": 0.5385,
+          "threshold": 0.8,
+          "support": 26
+        },
+        "milky": {
+          "f1": 0.2857,
+          "precision": 0.1964,
+          "recall": 0.5238,
+          "threshold": 0.6,
+          "support": 21
+        },
+        "powdery": {
+          "f1": 0.2581,
+          "precision": 0.5714,
+          "recall": 0.1667,
+          "threshold": 0.8,
+          "support": 24
+        },
+        "berry": {
+          "f1": 0.2388,
+          "precision": 0.1455,
+          "recall": 0.6667,
+          "threshold": 0.55,
+          "support": 24
+        },
+        "honey": {
+          "f1": 0.2791,
+          "precision": 0.2222,
+          "recall": 0.375,
+          "threshold": 0.65,
+          "support": 16
+        },
+        "aldehydic": {
+          "f1": 0.25,
+          "precision": 0.1667,
+          "recall": 0.5,
+          "threshold": 0.55,
+          "support": 10
+        },
+        "fermented": {
+          "f1": 0.3333,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "threshold": 0.7,
+          "support": 15
+        },
+        "dry": {
+          "f1": 0.2609,
+          "precision": 0.2045,
+          "recall": 0.36,
+          "threshold": 0.75,
+          "support": 25
+        },
+        "buttery": {
+          "f1": 0.359,
+          "precision": 0.3182,
+          "recall": 0.4118,
+          "threshold": 0.8,
+          "support": 17
+        },
+        "metallic": {
+          "f1": 0.0667,
+          "precision": 0.0769,
+          "recall": 0.0588,
+          "threshold": 0.6,
+          "support": 17
+        },
+        "pear": {
+          "f1": 0.5161,
+          "precision": 0.4706,
+          "recall": 0.5714,
+          "threshold": 0.8,
+          "support": 14
+        },
+        "banana": {
+          "f1": 0.2857,
+          "precision": 0.1739,
+          "recall": 0.8,
+          "threshold": 0.7,
+          "support": 10
+        },
+        "melon": {
+          "f1": 0.1667,
+          "precision": 0.1111,
+          "recall": 0.3333,
+          "threshold": 0.8,
+          "support": 6
+        },
+        "camphoreous": {
+          "f1": 0.2222,
+          "precision": 0.1321,
+          "recall": 0.7,
+          "threshold": 0.55,
+          "support": 20
+        },
+        "savory": {
+          "f1": 0.2462,
+          "precision": 0.2,
+          "recall": 0.32,
+          "threshold": 0.8,
+          "support": 25
+        },
+        "leafy": {
+          "f1": 0.0435,
+          "precision": 0.0227,
+          "recall": 0.5,
+          "threshold": 0.4,
+          "support": 6
+        },
+        "animal": {
+          "f1": 0.1429,
+          "precision": 0.0952,
+          "recall": 0.2857,
+          "threshold": 0.7,
+          "support": 7
+        },
+        "cocoa": {
+          "f1": 0.2353,
+          "precision": 0.1391,
+          "recall": 0.7619,
+          "threshold": 0.35,
+          "support": 21
+        },
+        "cognac": {
+          "f1": 0.5926,
+          "precision": 0.8,
+          "recall": 0.4706,
+          "threshold": 0.8,
+          "support": 17
+        },
+        "vanilla": {
+          "f1": 0.3529,
+          "precision": 0.2308,
+          "recall": 0.75,
+          "threshold": 0.7,
+          "support": 8
+        },
+        "coffee": {
+          "f1": 0.3363,
+          "precision": 0.2375,
+          "recall": 0.5758,
+          "threshold": 0.8,
+          "support": 33
+        },
+        "alcoholic": {
+          "f1": 0.2353,
+          "precision": 0.2,
+          "recall": 0.2857,
+          "threshold": 0.8,
+          "support": 7
+        },
+        "mushroom": {
+          "f1": 0.2778,
+          "precision": 0.25,
+          "recall": 0.3125,
+          "threshold": 0.5,
+          "support": 16
+        },
+        "tobacco": {
+          "f1": 0.2143,
+          "precision": 0.1463,
+          "recall": 0.4,
+          "threshold": 0.7,
+          "support": 15
+        },
+        "almond": {
+          "f1": 0.3378,
+          "precision": 0.2193,
+          "recall": 0.7353,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "orange": {
+          "f1": 0.3571,
+          "precision": 0.3846,
+          "recall": 0.3333,
+          "threshold": 0.45,
+          "support": 15
+        },
+        "warm": {
+          "f1": 0.0545,
+          "precision": 0.0297,
+          "recall": 0.3333,
+          "threshold": 0.5,
+          "support": 9
+        },
+        "peach": {
+          "f1": 0.1739,
+          "precision": 0.1333,
+          "recall": 0.25,
+          "threshold": 0.65,
+          "support": 8
+        },
+        "musk": {
+          "f1": 0.1308,
+          "precision": 0.0714,
+          "recall": 0.7778,
+          "threshold": 0.35,
+          "support": 9
+        },
+        "coconut": {
+          "f1": 0.1667,
+          "precision": 0.0923,
+          "recall": 0.8571,
+          "threshold": 0.35,
+          "support": 7
+        },
+        "jasmin": {
+          "f1": 0.3636,
+          "precision": 0.3077,
+          "recall": 0.4444,
+          "threshold": 0.65,
+          "support": 9
+        },
+        "grape": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.75,
+          "support": 8
+        },
+        "clean": {
+          "f1": 0.2745,
+          "precision": 0.175,
+          "recall": 0.6364,
+          "threshold": 0.45,
+          "support": 11
+        },
+        "anise": {
+          "f1": 0.2222,
+          "precision": 0.1667,
+          "recall": 0.3333,
+          "threshold": 0.65,
+          "support": 12
+        },
+        "bland": {
+          "f1": 0.0444,
+          "precision": 0.0227,
+          "recall": 1.0,
+          "threshold": 0.35,
+          "support": 1
+        },
+        "cherry": {
+          "f1": 0.4074,
+          "precision": 0.3438,
+          "recall": 0.5,
+          "threshold": 0.5,
+          "support": 22
+        },
+        "amber": {
+          "f1": 0.4615,
+          "precision": 0.4286,
+          "recall": 0.5,
+          "threshold": 0.75,
+          "support": 12
+        },
+        "pine": {
+          "f1": 0.2222,
+          "precision": 0.4286,
+          "recall": 0.15,
+          "threshold": 0.75,
+          "support": 20
+        },
+        "fishy": {
+          "f1": 0.3704,
+          "precision": 0.3125,
+          "recall": 0.4545,
+          "threshold": 0.7,
+          "support": 11
+        },
+        "apricot": {
+          "f1": 0.3333,
+          "precision": 0.5,
+          "recall": 0.25,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "aromatic": {
+          "f1": 0.0667,
+          "precision": 0.0377,
+          "recall": 0.2857,
+          "threshold": 0.55,
+          "support": 7
+        },
+        "ripe": {
+          "f1": 0.1053,
+          "precision": 0.5,
+          "recall": 0.0588,
+          "threshold": 0.7,
+          "support": 17
+        },
+        "hay": {
+          "f1": 0.0833,
+          "precision": 0.0667,
+          "recall": 0.1111,
+          "threshold": 0.75,
+          "support": 9
+        },
+        "violet": {
+          "f1": 0.1818,
+          "precision": 0.1081,
+          "recall": 0.5714,
+          "threshold": 0.5,
+          "support": 7
+        },
+        "medicinal": {
+          "f1": 0.4,
+          "precision": 0.4286,
+          "recall": 0.375,
+          "threshold": 0.8,
+          "support": 16
+        },
+        "grapefruit": {
+          "f1": 0.3125,
+          "precision": 0.2174,
+          "recall": 0.5556,
+          "threshold": 0.6,
+          "support": 9
+        },
+        "cooling": {
+          "f1": 0.15,
+          "precision": 0.1,
+          "recall": 0.3,
+          "threshold": 0.55,
+          "support": 10
+        },
+        "chocolate": {
+          "f1": 0.3846,
+          "precision": 0.5556,
+          "recall": 0.2941,
+          "threshold": 0.7,
+          "support": 17
+        },
+        "smoky": {
+          "f1": 0.2308,
+          "precision": 0.1304,
+          "recall": 1.0,
+          "threshold": 0.8,
+          "support": 3
+        },
+        "mild": {
+          "f1": 0.0156,
+          "precision": 0.0079,
+          "recall": 0.5,
+          "threshold": 0.25,
+          "support": 2
+        },
+        "sour": {
+          "f1": 0.6061,
+          "precision": 0.5556,
+          "recall": 0.6667,
+          "threshold": 0.6,
+          "support": 15
+        },
+        "lemon": {
+          "f1": 0.1739,
+          "precision": 0.1111,
+          "recall": 0.4,
+          "threshold": 0.5,
+          "support": 5
+        },
+        "solvent": {
+          "f1": 0.2857,
+          "precision": 0.3333,
+          "recall": 0.25,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "lily": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.5,
+          "support": 0
+        },
+        "cooked": {
+          "f1": 0.0924,
+          "precision": 0.0489,
+          "recall": 0.8462,
+          "threshold": 0.1,
+          "support": 13
+        },
+        "potato": {
+          "f1": 0.3529,
+          "precision": 0.2903,
+          "recall": 0.45,
+          "threshold": 0.65,
+          "support": 20
+        },
+        "plum": {
+          "f1": 0.1818,
+          "precision": 0.25,
+          "recall": 0.1429,
+          "threshold": 0.7,
+          "support": 7
+        },
+        "rum": {
+          "f1": 0.2642,
+          "precision": 0.1795,
+          "recall": 0.5,
+          "threshold": 0.55,
+          "support": 14
+        },
+        "coumarinic": {
+          "f1": 0.3636,
+          "precision": 0.2857,
+          "recall": 0.5,
+          "threshold": 0.65,
+          "support": 12
+        },
+        "orris": {
+          "f1": 0.2759,
+          "precision": 0.1905,
+          "recall": 0.5,
+          "threshold": 0.55,
+          "support": 8
+        },
+        "grassy": {
+          "f1": 0.1538,
+          "precision": 0.1111,
+          "recall": 0.25,
+          "threshold": 0.5,
+          "support": 4
+        },
+        "tea": {
+          "f1": 0.031,
+          "precision": 0.0158,
+          "recall": 0.7143,
+          "threshold": 0.15,
+          "support": 7
+        },
+        "soap": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.5,
+          "support": 4
+        },
+        "bark": {
+          "f1": 0.08,
+          "precision": 0.0476,
+          "recall": 0.25,
+          "threshold": 0.4,
+          "support": 4
+        },
+        "gasoline": {
+          "f1": 0.0652,
+          "precision": 0.0337,
+          "recall": 1.0,
+          "threshold": 0.25,
+          "support": 3
+        },
+        "rummy": {
+          "f1": 0.125,
+          "precision": 0.087,
+          "recall": 0.2222,
+          "threshold": 0.65,
+          "support": 9
+        },
+        "geranium": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.8,
+          "support": 4
+        },
+        "brown": {
+          "f1": 0.2069,
+          "precision": 0.1277,
+          "recall": 0.5455,
+          "threshold": 0.4,
+          "support": 22
+        },
+        "leathery": {
+          "f1": 0.1538,
+          "precision": 0.1111,
+          "recall": 0.25,
+          "threshold": 0.8,
+          "support": 4
+        },
+        "hyacinth": {
+          "f1": 0.1905,
+          "precision": 0.1111,
+          "recall": 0.6667,
+          "threshold": 0.55,
+          "support": 3
+        },
+        "hazelnut": {
+          "f1": 0.2197,
+          "precision": 0.1234,
+          "recall": 1.0,
+          "threshold": 0.1,
+          "support": 19
+        },
+        "muguet": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.65,
+          "support": 0
+        },
+        "black": {
+          "f1": 0.0247,
+          "precision": 0.0128,
+          "recall": 0.3333,
+          "threshold": 0.15,
+          "support": 6
+        },
+        "chicken": {
+          "f1": 0.1111,
+          "precision": 1.0,
+          "recall": 0.0588,
+          "threshold": 0.65,
+          "support": 17
+        },
+        "strawberry": {
+          "f1": 0.0857,
+          "precision": 0.0492,
+          "recall": 0.3333,
+          "threshold": 0.35,
+          "support": 9
+        },
+        "cinnamon": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.8,
+          "support": 2
+        },
+        "cabbage": {
+          "f1": 0.2105,
+          "precision": 0.1818,
+          "recall": 0.25,
+          "threshold": 0.7,
+          "support": 8
+        },
+        "ketonic": {
+          "f1": 0.2609,
+          "precision": 0.1765,
+          "recall": 0.5,
+          "threshold": 0.65,
+          "support": 6
+        },
+        "cucumber": {
+          "f1": 0.5,
+          "precision": 1.0,
+          "recall": 0.3333,
+          "threshold": 0.8,
+          "support": 3
+        },
+        "estery": {
+          "f1": 0.25,
+          "precision": 0.2143,
+          "recall": 0.3,
+          "threshold": 0.8,
+          "support": 10
+        },
+        "lactonic": {
+          "f1": 0.2857,
+          "precision": 0.1786,
+          "recall": 0.7143,
+          "threshold": 0.45,
+          "support": 7
+        },
+        "currant": {
+          "f1": 0.05,
+          "precision": 0.0256,
+          "recall": 1.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        "jasmine": {
+          "f1": 0.3636,
+          "precision": 0.25,
+          "recall": 0.6667,
+          "threshold": 0.55,
+          "support": 3
+        },
+        "skin": {
+          "f1": 0.1176,
+          "precision": 0.0952,
+          "recall": 0.1538,
+          "threshold": 0.25,
+          "support": 26
+        },
+        "weedy": {
+          "f1": 0.1111,
+          "precision": 0.0833,
+          "recall": 0.1667,
+          "threshold": 0.45,
+          "support": 6
+        },
+        "lavender": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.5,
+          "support": 2
+        },
+        "brandy": {
+          "f1": 0.2254,
+          "precision": 0.1481,
+          "recall": 0.4706,
+          "threshold": 0.35,
+          "support": 17
+        },
+        "raspberry": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        "nut": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 38
+        },
+        "beefy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 39
+        },
+        "terpenic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 29
+        },
+        "cedar": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "bitter": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        "tomato": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 26
+        },
+        "bready": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 29
+        },
+        "popcorn": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "juicy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "bread": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "brothy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        "acidic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 33
+        },
+        "celery": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 27
+        },
+        "herbaceous": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "sandalwood": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        "chemical": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "licorice": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 10
+        },
+        "ozone": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        "camphor": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 4
+        },
+        "plastic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 7
+        },
+        "vetiver": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "radish": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "grass": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "hawthorn": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "horseradish": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "malty": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "bergamot": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "leaf": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "chamomile": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "peel": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "orangeflower": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "jammy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "peppery": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "marine": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        }
+      },
+      "top_10_best": [
+        {
+          "label": "sulfur",
+          "f1": 0.7117,
+          "precision": 0.5577,
+          "recall": 0.9831,
+          "threshold": 0.45,
+          "support": 59
+        },
+        {
+          "label": "woody",
+          "f1": 0.7111,
+          "precision": 0.7767,
+          "recall": 0.6557,
+          "threshold": 0.75,
+          "support": 122
+        },
+        {
+          "label": "fruity",
+          "f1": 0.6863,
+          "precision": 0.6114,
+          "recall": 0.7821,
+          "threshold": 0.4,
+          "support": 179
+        },
+        {
+          "label": "meaty",
+          "f1": 0.6353,
+          "precision": 0.6,
+          "recall": 0.675,
+          "threshold": 0.8,
+          "support": 80
+        },
+        {
+          "label": "roasted",
+          "f1": 0.612,
+          "precision": 0.5385,
+          "recall": 0.7089,
+          "threshold": 0.8,
+          "support": 79
+        },
+        {
+          "label": "sour",
+          "f1": 0.6061,
+          "precision": 0.5556,
+          "recall": 0.6667,
+          "threshold": 0.6,
+          "support": 15
+        },
+        {
+          "label": "sweet",
+          "f1": 0.5928,
+          "precision": 0.4962,
+          "recall": 0.736,
+          "threshold": 0.4,
+          "support": 178
+        },
+        {
+          "label": "cognac",
+          "f1": 0.5926,
+          "precision": 0.8,
+          "recall": 0.4706,
+          "threshold": 0.8,
+          "support": 17
+        },
+        {
+          "label": "floral",
+          "f1": 0.573,
+          "precision": 0.5096,
+          "recall": 0.6543,
+          "threshold": 0.55,
+          "support": 81
+        },
+        {
+          "label": "nutty",
+          "f1": 0.5698,
+          "precision": 0.6203,
+          "recall": 0.5269,
+          "threshold": 0.8,
+          "support": 93
+        }
+      ],
+      "top_10_worst": [
+        {
+          "label": "brothy",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        {
+          "label": "acidic",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 33
+        },
+        {
+          "label": "celery",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 27
+        },
+        {
+          "label": "herbaceous",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        {
+          "label": "sandalwood",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        {
+          "label": "chemical",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        {
+          "label": "licorice",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 10
+        },
+        {
+          "label": "ozone",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        {
+          "label": "camphor",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 4
+        },
+        {
+          "label": "plastic",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 7
+        }
+      ]
+    },
+    "gcn": {
+      "model_key": "gcn",
+      "display_name": "GCN Baseline",
+      "macro_f1": 0.2077,
+      "micro_f1": 0.3311,
+      "test_loss": 0.2847,
+      "best_val_macro_f1": 0.1784,
+      "epochs_trained": 15,
+      "training_curves": [
+        {
+          "epoch": 1,
+          "train_loss": 0.7343,
+          "val_loss": 0.3451,
+          "val_macro_f1": 0.0952,
+          "val_micro_f1": 0.2583
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.567,
+          "val_loss": 0.3405,
+          "val_macro_f1": 0.129,
+          "val_micro_f1": 0.2786
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.5197,
+          "val_loss": 0.3162,
+          "val_macro_f1": 0.142,
+          "val_micro_f1": 0.2856
+        },
+        {
+          "epoch": 4,
+          "train_loss": 0.4959,
+          "val_loss": 0.307,
+          "val_macro_f1": 0.1386,
+          "val_micro_f1": 0.2773
+        },
+        {
+          "epoch": 5,
+          "train_loss": 0.4815,
+          "val_loss": 0.3061,
+          "val_macro_f1": 0.1416,
+          "val_micro_f1": 0.2706
+        },
+        {
+          "epoch": 6,
+          "train_loss": 0.4687,
+          "val_loss": 0.3027,
+          "val_macro_f1": 0.1503,
+          "val_micro_f1": 0.2836
+        },
+        {
+          "epoch": 7,
+          "train_loss": 0.458,
+          "val_loss": 0.3033,
+          "val_macro_f1": 0.1615,
+          "val_micro_f1": 0.2883
+        },
+        {
+          "epoch": 8,
+          "train_loss": 0.4508,
+          "val_loss": 0.2913,
+          "val_macro_f1": 0.1645,
+          "val_micro_f1": 0.2939
+        },
+        {
+          "epoch": 9,
+          "train_loss": 0.4426,
+          "val_loss": 0.3032,
+          "val_macro_f1": 0.1545,
+          "val_micro_f1": 0.2727
+        },
+        {
+          "epoch": 10,
+          "train_loss": 0.4389,
+          "val_loss": 0.2964,
+          "val_macro_f1": 0.1553,
+          "val_micro_f1": 0.2873
+        },
+        {
+          "epoch": 11,
+          "train_loss": 0.4337,
+          "val_loss": 0.3113,
+          "val_macro_f1": 0.1629,
+          "val_micro_f1": 0.2783
+        },
+        {
+          "epoch": 12,
+          "train_loss": 0.4248,
+          "val_loss": 0.2909,
+          "val_macro_f1": 0.1761,
+          "val_micro_f1": 0.2991
+        },
+        {
+          "epoch": 13,
+          "train_loss": 0.419,
+          "val_loss": 0.2956,
+          "val_macro_f1": 0.1754,
+          "val_micro_f1": 0.2975
+        },
+        {
+          "epoch": 14,
+          "train_loss": 0.4147,
+          "val_loss": 0.2993,
+          "val_macro_f1": 0.17,
+          "val_micro_f1": 0.2925
+        },
+        {
+          "epoch": 15,
+          "train_loss": 0.4124,
+          "val_loss": 0.2932,
+          "val_macro_f1": 0.1784,
+          "val_micro_f1": 0.3013
+        }
+      ],
+      "optimal_thresholds": {
+        "fruity": 0.4,
+        "sweet": 0.5,
+        "green": 0.35,
+        "floral": 0.35,
+        "herbal": 0.45,
+        "woody": 0.55,
+        "fatty": 0.7,
+        "fresh": 0.45,
+        "waxy": 0.65,
+        "spicy": 0.5,
+        "sulfur": 0.8,
+        "tropical": 0.35,
+        "citrus": 0.6,
+        "oily": 0.75,
+        "nutty": 0.65,
+        "rose": 0.7,
+        "earthy": 0.7,
+        "apple": 0.75,
+        "roasted": 0.8,
+        "balsamic": 0.6,
+        "meaty": 0.75,
+        "vegetable": 0.6,
+        "ethereal": 0.8,
+        "minty": 0.75,
+        "caramel": 0.8,
+        "winey": 0.8,
+        "pineapple": 0.7,
+        "pungent": 0.8,
+        "odorless": 0.45,
+        "musty": 0.65,
+        "burnt": 0.75,
+        "garlic": 0.8,
+        "creamy": 0.55,
+        "cheesy": 0.75,
+        "onion": 0.8,
+        "phenolic": 0.8,
+        "milky": 0.8,
+        "powdery": 0.55,
+        "berry": 0.4,
+        "honey": 0.5,
+        "aldehydic": 0.8,
+        "fermented": 0.8,
+        "dry": 0.45,
+        "buttery": 0.75,
+        "metallic": 0.45,
+        "pear": 0.8,
+        "banana": 0.75,
+        "melon": 0.7,
+        "camphoreous": 0.7,
+        "savory": 0.6,
+        "leafy": 0.25,
+        "animal": 0.7,
+        "cocoa": 0.4,
+        "cognac": 0.75,
+        "vanilla": 0.8,
+        "coffee": 0.75,
+        "alcoholic": 0.75,
+        "mushroom": 0.75,
+        "tobacco": 0.65,
+        "almond": 0.65,
+        "orange": 0.65,
+        "warm": 0.4,
+        "peach": 0.35,
+        "musk": 0.75,
+        "coconut": 0.55,
+        "jasmin": 0.45,
+        "grape": 0.8,
+        "clean": 0.35,
+        "anise": 0.65,
+        "bland": 0.35,
+        "cherry": 0.55,
+        "amber": 0.5,
+        "pine": 0.75,
+        "fishy": 0.8,
+        "apricot": 0.6,
+        "aromatic": 0.8,
+        "ripe": 0.75,
+        "hay": 0.55,
+        "violet": 0.4,
+        "medicinal": 0.8,
+        "grapefruit": 0.5,
+        "cooling": 0.55,
+        "chocolate": 0.45,
+        "smoky": 0.8,
+        "mild": 0.1,
+        "sour": 0.65,
+        "lemon": 0.65,
+        "solvent": 0.8,
+        "lily": 0.45,
+        "cooked": 0.15,
+        "potato": 0.55,
+        "plum": 0.45,
+        "rum": 0.75,
+        "coumarinic": 0.3,
+        "orris": 0.3,
+        "grassy": 0.4,
+        "tea": 0.15,
+        "soap": 0.55,
+        "bark": 0.3,
+        "gasoline": 0.8,
+        "rummy": 0.6,
+        "geranium": 0.5,
+        "brown": 0.3,
+        "leathery": 0.75,
+        "hyacinth": 0.4,
+        "hazelnut": 0.35,
+        "muguet": 0.7,
+        "black": 0.35,
+        "chicken": 0.75,
+        "strawberry": 0.45,
+        "cinnamon": 0.75,
+        "cabbage": 0.8,
+        "ketonic": 0.8,
+        "cucumber": 0.8,
+        "estery": 0.75,
+        "lactonic": 0.2,
+        "currant": 0.35,
+        "jasmine": 0.5,
+        "skin": 0.25,
+        "weedy": 0.25,
+        "lavender": 0.5,
+        "brandy": 0.1,
+        "raspberry": 0.35,
+        "nut": 0.35,
+        "beefy": 0.35,
+        "terpenic": 0.35,
+        "cedar": 0.35,
+        "bitter": 0.35,
+        "tomato": 0.35,
+        "bready": 0.35,
+        "popcorn": 0.35,
+        "juicy": 0.35,
+        "bread": 0.35,
+        "brothy": 0.35,
+        "acidic": 0.35,
+        "celery": 0.35,
+        "herbaceous": 0.35,
+        "sandalwood": 0.35,
+        "chemical": 0.35,
+        "licorice": 0.35,
+        "ozone": 0.35,
+        "camphor": 0.35,
+        "plastic": 0.35,
+        "vetiver": 0.35,
+        "radish": 0.35,
+        "grass": 0.35,
+        "hawthorn": 0.35,
+        "horseradish": 0.35,
+        "malty": 0.35,
+        "bergamot": 0.35,
+        "leaf": 0.35,
+        "chamomile": 0.35,
+        "peel": 0.35,
+        "orangeflower": 0.35,
+        "jammy": 0.35,
+        "peppery": 0.35,
+        "marine": 0.35
+      },
+      "per_label_metrics": {
+        "fruity": {
+          "f1": 0.6904,
+          "precision": 0.6326,
+          "recall": 0.7598,
+          "threshold": 0.4,
+          "support": 179
+        },
+        "sweet": {
+          "f1": 0.5859,
+          "precision": 0.5321,
+          "recall": 0.6517,
+          "threshold": 0.5,
+          "support": 178
+        },
+        "green": {
+          "f1": 0.445,
+          "precision": 0.3003,
+          "recall": 0.8584,
+          "threshold": 0.35,
+          "support": 113
+        },
+        "floral": {
+          "f1": 0.5375,
+          "precision": 0.3953,
+          "recall": 0.8395,
+          "threshold": 0.35,
+          "support": 81
+        },
+        "herbal": {
+          "f1": 0.4884,
+          "precision": 0.3507,
+          "recall": 0.8043,
+          "threshold": 0.45,
+          "support": 92
+        },
+        "woody": {
+          "f1": 0.722,
+          "precision": 0.7311,
+          "recall": 0.7131,
+          "threshold": 0.55,
+          "support": 122
+        },
+        "fatty": {
+          "f1": 0.4634,
+          "precision": 0.5938,
+          "recall": 0.38,
+          "threshold": 0.7,
+          "support": 50
+        },
+        "fresh": {
+          "f1": 0.318,
+          "precision": 0.1957,
+          "recall": 0.8491,
+          "threshold": 0.45,
+          "support": 53
+        },
+        "waxy": {
+          "f1": 0.4848,
+          "precision": 0.4706,
+          "recall": 0.5,
+          "threshold": 0.65,
+          "support": 32
+        },
+        "spicy": {
+          "f1": 0.3806,
+          "precision": 0.25,
+          "recall": 0.7966,
+          "threshold": 0.5,
+          "support": 59
+        },
+        "sulfur": {
+          "f1": 0.7606,
+          "precision": 0.6506,
+          "recall": 0.9153,
+          "threshold": 0.8,
+          "support": 59
+        },
+        "tropical": {
+          "f1": 0.337,
+          "precision": 0.2214,
+          "recall": 0.7045,
+          "threshold": 0.35,
+          "support": 44
+        },
+        "citrus": {
+          "f1": 0.4,
+          "precision": 0.2963,
+          "recall": 0.6154,
+          "threshold": 0.6,
+          "support": 39
+        },
+        "oily": {
+          "f1": 0.2909,
+          "precision": 0.4444,
+          "recall": 0.2162,
+          "threshold": 0.75,
+          "support": 37
+        },
+        "nutty": {
+          "f1": 0.6056,
+          "precision": 0.481,
+          "recall": 0.8172,
+          "threshold": 0.65,
+          "support": 93
+        },
+        "rose": {
+          "f1": 0.3333,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "threshold": 0.7,
+          "support": 27
+        },
+        "earthy": {
+          "f1": 0.2687,
+          "precision": 0.1957,
+          "recall": 0.4286,
+          "threshold": 0.7,
+          "support": 42
+        },
+        "apple": {
+          "f1": 0.5385,
+          "precision": 0.4375,
+          "recall": 0.7,
+          "threshold": 0.75,
+          "support": 30
+        },
+        "roasted": {
+          "f1": 0.6316,
+          "precision": 0.5405,
+          "recall": 0.7595,
+          "threshold": 0.8,
+          "support": 79
+        },
+        "balsamic": {
+          "f1": 0.2899,
+          "precision": 0.2041,
+          "recall": 0.5,
+          "threshold": 0.6,
+          "support": 20
+        },
+        "meaty": {
+          "f1": 0.6514,
+          "precision": 0.6,
+          "recall": 0.7125,
+          "threshold": 0.75,
+          "support": 80
+        },
+        "vegetable": {
+          "f1": 0.3959,
+          "precision": 0.2635,
+          "recall": 0.7959,
+          "threshold": 0.6,
+          "support": 49
+        },
+        "ethereal": {
+          "f1": 0.4516,
+          "precision": 0.3011,
+          "recall": 0.9032,
+          "threshold": 0.8,
+          "support": 31
+        },
+        "minty": {
+          "f1": 0.2883,
+          "precision": 0.1818,
+          "recall": 0.6957,
+          "threshold": 0.75,
+          "support": 23
+        },
+        "caramel": {
+          "f1": 0.4356,
+          "precision": 0.3667,
+          "recall": 0.5366,
+          "threshold": 0.8,
+          "support": 41
+        },
+        "winey": {
+          "f1": 0.4412,
+          "precision": 0.3261,
+          "recall": 0.6818,
+          "threshold": 0.8,
+          "support": 22
+        },
+        "pineapple": {
+          "f1": 0.6154,
+          "precision": 0.4615,
+          "recall": 0.9231,
+          "threshold": 0.7,
+          "support": 26
+        },
+        "pungent": {
+          "f1": 0.3759,
+          "precision": 0.2451,
+          "recall": 0.8065,
+          "threshold": 0.8,
+          "support": 31
+        },
+        "odorless": {
+          "f1": 0.1333,
+          "precision": 0.0833,
+          "recall": 0.3333,
+          "threshold": 0.45,
+          "support": 3
+        },
+        "musty": {
+          "f1": 0.2297,
+          "precision": 0.1604,
+          "recall": 0.4048,
+          "threshold": 0.65,
+          "support": 42
+        },
+        "burnt": {
+          "f1": 0.2741,
+          "precision": 0.1656,
+          "recall": 0.7941,
+          "threshold": 0.75,
+          "support": 34
+        },
+        "garlic": {
+          "f1": 0.4524,
+          "precision": 0.3167,
+          "recall": 0.7917,
+          "threshold": 0.8,
+          "support": 24
+        },
+        "creamy": {
+          "f1": 0.1618,
+          "precision": 0.0957,
+          "recall": 0.5238,
+          "threshold": 0.55,
+          "support": 21
+        },
+        "cheesy": {
+          "f1": 0.422,
+          "precision": 0.3108,
+          "recall": 0.6571,
+          "threshold": 0.75,
+          "support": 35
+        },
+        "onion": {
+          "f1": 0.4211,
+          "precision": 0.2807,
+          "recall": 0.8421,
+          "threshold": 0.8,
+          "support": 19
+        },
+        "phenolic": {
+          "f1": 0.44,
+          "precision": 0.4583,
+          "recall": 0.4231,
+          "threshold": 0.8,
+          "support": 26
+        },
+        "milky": {
+          "f1": 0.439,
+          "precision": 0.45,
+          "recall": 0.4286,
+          "threshold": 0.8,
+          "support": 21
+        },
+        "powdery": {
+          "f1": 0.1778,
+          "precision": 0.1905,
+          "recall": 0.1667,
+          "threshold": 0.55,
+          "support": 24
+        },
+        "berry": {
+          "f1": 0.184,
+          "precision": 0.1079,
+          "recall": 0.625,
+          "threshold": 0.4,
+          "support": 24
+        },
+        "honey": {
+          "f1": 0.2667,
+          "precision": 0.2069,
+          "recall": 0.375,
+          "threshold": 0.5,
+          "support": 16
+        },
+        "aldehydic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.8,
+          "support": 10
+        },
+        "fermented": {
+          "f1": 0.254,
+          "precision": 0.1667,
+          "recall": 0.5333,
+          "threshold": 0.8,
+          "support": 15
+        },
+        "dry": {
+          "f1": 0.2157,
+          "precision": 0.1429,
+          "recall": 0.44,
+          "threshold": 0.45,
+          "support": 25
+        },
+        "buttery": {
+          "f1": 0.4255,
+          "precision": 0.3333,
+          "recall": 0.5882,
+          "threshold": 0.75,
+          "support": 17
+        },
+        "metallic": {
+          "f1": 0.0926,
+          "precision": 0.0549,
+          "recall": 0.2941,
+          "threshold": 0.45,
+          "support": 17
+        },
+        "pear": {
+          "f1": 0.4444,
+          "precision": 0.3636,
+          "recall": 0.5714,
+          "threshold": 0.8,
+          "support": 14
+        },
+        "banana": {
+          "f1": 0.2963,
+          "precision": 0.1818,
+          "recall": 0.8,
+          "threshold": 0.75,
+          "support": 10
+        },
+        "melon": {
+          "f1": 0.1111,
+          "precision": 0.0833,
+          "recall": 0.1667,
+          "threshold": 0.7,
+          "support": 6
+        },
+        "camphoreous": {
+          "f1": 0.2667,
+          "precision": 0.1714,
+          "recall": 0.6,
+          "threshold": 0.7,
+          "support": 20
+        },
+        "savory": {
+          "f1": 0.3158,
+          "precision": 0.2143,
+          "recall": 0.6,
+          "threshold": 0.6,
+          "support": 25
+        },
+        "leafy": {
+          "f1": 0.0203,
+          "precision": 0.0105,
+          "recall": 0.3333,
+          "threshold": 0.25,
+          "support": 6
+        },
+        "animal": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.7,
+          "support": 7
+        },
+        "cocoa": {
+          "f1": 0.2464,
+          "precision": 0.1453,
+          "recall": 0.8095,
+          "threshold": 0.4,
+          "support": 21
+        },
+        "cognac": {
+          "f1": 0.5106,
+          "precision": 0.4,
+          "recall": 0.7059,
+          "threshold": 0.75,
+          "support": 17
+        },
+        "vanilla": {
+          "f1": 0.3333,
+          "precision": 0.5,
+          "recall": 0.25,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "coffee": {
+          "f1": 0.3333,
+          "precision": 0.2632,
+          "recall": 0.4545,
+          "threshold": 0.75,
+          "support": 33
+        },
+        "alcoholic": {
+          "f1": 0.3704,
+          "precision": 0.25,
+          "recall": 0.7143,
+          "threshold": 0.75,
+          "support": 7
+        },
+        "mushroom": {
+          "f1": 0.1053,
+          "precision": 0.3333,
+          "recall": 0.0625,
+          "threshold": 0.75,
+          "support": 16
+        },
+        "tobacco": {
+          "f1": 0.3158,
+          "precision": 0.2609,
+          "recall": 0.4,
+          "threshold": 0.65,
+          "support": 15
+        },
+        "almond": {
+          "f1": 0.3158,
+          "precision": 0.2459,
+          "recall": 0.4412,
+          "threshold": 0.65,
+          "support": 34
+        },
+        "orange": {
+          "f1": 0.2,
+          "precision": 0.4,
+          "recall": 0.1333,
+          "threshold": 0.65,
+          "support": 15
+        },
+        "warm": {
+          "f1": 0.0426,
+          "precision": 0.0235,
+          "recall": 0.2222,
+          "threshold": 0.4,
+          "support": 9
+        },
+        "peach": {
+          "f1": 0.1304,
+          "precision": 0.0789,
+          "recall": 0.375,
+          "threshold": 0.35,
+          "support": 8
+        },
+        "musk": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.75,
+          "support": 9
+        },
+        "coconut": {
+          "f1": 0.2,
+          "precision": 0.1212,
+          "recall": 0.5714,
+          "threshold": 0.55,
+          "support": 7
+        },
+        "jasmin": {
+          "f1": 0.1667,
+          "precision": 0.1333,
+          "recall": 0.2222,
+          "threshold": 0.45,
+          "support": 9
+        },
+        "grape": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "clean": {
+          "f1": 0.2105,
+          "precision": 0.1231,
+          "recall": 0.7273,
+          "threshold": 0.35,
+          "support": 11
+        },
+        "anise": {
+          "f1": 0.2609,
+          "precision": 0.2727,
+          "recall": 0.25,
+          "threshold": 0.65,
+          "support": 12
+        },
+        "bland": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 1
+        },
+        "cherry": {
+          "f1": 0.4231,
+          "precision": 0.3667,
+          "recall": 0.5,
+          "threshold": 0.55,
+          "support": 22
+        },
+        "amber": {
+          "f1": 0.25,
+          "precision": 0.2,
+          "recall": 0.3333,
+          "threshold": 0.5,
+          "support": 12
+        },
+        "pine": {
+          "f1": 0.2667,
+          "precision": 0.2,
+          "recall": 0.4,
+          "threshold": 0.75,
+          "support": 20
+        },
+        "fishy": {
+          "f1": 0.4,
+          "precision": 0.4444,
+          "recall": 0.3636,
+          "threshold": 0.8,
+          "support": 11
+        },
+        "apricot": {
+          "f1": 0.1875,
+          "precision": 0.125,
+          "recall": 0.375,
+          "threshold": 0.6,
+          "support": 8
+        },
+        "aromatic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.8,
+          "support": 7
+        },
+        "ripe": {
+          "f1": 0.1905,
+          "precision": 0.5,
+          "recall": 0.1176,
+          "threshold": 0.75,
+          "support": 17
+        },
+        "hay": {
+          "f1": 0.1277,
+          "precision": 0.0789,
+          "recall": 0.3333,
+          "threshold": 0.55,
+          "support": 9
+        },
+        "violet": {
+          "f1": 0.2727,
+          "precision": 0.2,
+          "recall": 0.4286,
+          "threshold": 0.4,
+          "support": 7
+        },
+        "medicinal": {
+          "f1": 0.4,
+          "precision": 0.4286,
+          "recall": 0.375,
+          "threshold": 0.8,
+          "support": 16
+        },
+        "grapefruit": {
+          "f1": 0.3571,
+          "precision": 0.2632,
+          "recall": 0.5556,
+          "threshold": 0.5,
+          "support": 9
+        },
+        "cooling": {
+          "f1": 0.1111,
+          "precision": 0.0769,
+          "recall": 0.2,
+          "threshold": 0.55,
+          "support": 10
+        },
+        "chocolate": {
+          "f1": 0.2381,
+          "precision": 0.1493,
+          "recall": 0.5882,
+          "threshold": 0.45,
+          "support": 17
+        },
+        "smoky": {
+          "f1": 0.2222,
+          "precision": 0.1333,
+          "recall": 0.6667,
+          "threshold": 0.8,
+          "support": 3
+        },
+        "mild": {
+          "f1": 0.0161,
+          "precision": 0.0081,
+          "recall": 1.0,
+          "threshold": 0.1,
+          "support": 2
+        },
+        "sour": {
+          "f1": 0.5455,
+          "precision": 0.5,
+          "recall": 0.6,
+          "threshold": 0.65,
+          "support": 15
+        },
+        "lemon": {
+          "f1": 0.1,
+          "precision": 0.0667,
+          "recall": 0.2,
+          "threshold": 0.65,
+          "support": 5
+        },
+        "solvent": {
+          "f1": 0.2326,
+          "precision": 0.1429,
+          "recall": 0.625,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "lily": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.45,
+          "support": 0
+        },
+        "cooked": {
+          "f1": 0.1152,
+          "precision": 0.0618,
+          "recall": 0.8462,
+          "threshold": 0.15,
+          "support": 13
+        },
+        "potato": {
+          "f1": 0.381,
+          "precision": 0.25,
+          "recall": 0.8,
+          "threshold": 0.55,
+          "support": 20
+        },
+        "plum": {
+          "f1": 0.125,
+          "precision": 0.1111,
+          "recall": 0.1429,
+          "threshold": 0.45,
+          "support": 7
+        },
+        "rum": {
+          "f1": 0.2941,
+          "precision": 0.25,
+          "recall": 0.3571,
+          "threshold": 0.75,
+          "support": 14
+        },
+        "coumarinic": {
+          "f1": 0.3125,
+          "precision": 0.1923,
+          "recall": 0.8333,
+          "threshold": 0.3,
+          "support": 12
+        },
+        "orris": {
+          "f1": 0.2,
+          "precision": 0.1154,
+          "recall": 0.75,
+          "threshold": 0.3,
+          "support": 8
+        },
+        "grassy": {
+          "f1": 0.1,
+          "precision": 0.0625,
+          "recall": 0.25,
+          "threshold": 0.4,
+          "support": 4
+        },
+        "tea": {
+          "f1": 0.0485,
+          "precision": 0.0251,
+          "recall": 0.7143,
+          "threshold": 0.15,
+          "support": 7
+        },
+        "soap": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.55,
+          "support": 4
+        },
+        "bark": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.3,
+          "support": 4
+        },
+        "gasoline": {
+          "f1": 0.2105,
+          "precision": 0.125,
+          "recall": 0.6667,
+          "threshold": 0.8,
+          "support": 3
+        },
+        "rummy": {
+          "f1": 0.1212,
+          "precision": 0.0833,
+          "recall": 0.2222,
+          "threshold": 0.6,
+          "support": 9
+        },
+        "geranium": {
+          "f1": 0.0833,
+          "precision": 0.05,
+          "recall": 0.25,
+          "threshold": 0.5,
+          "support": 4
+        },
+        "brown": {
+          "f1": 0.2154,
+          "precision": 0.1296,
+          "recall": 0.6364,
+          "threshold": 0.3,
+          "support": 22
+        },
+        "leathery": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.75,
+          "support": 4
+        },
+        "hyacinth": {
+          "f1": 0.1667,
+          "precision": 0.0952,
+          "recall": 0.6667,
+          "threshold": 0.4,
+          "support": 3
+        },
+        "hazelnut": {
+          "f1": 0.3495,
+          "precision": 0.2143,
+          "recall": 0.9474,
+          "threshold": 0.35,
+          "support": 19
+        },
+        "muguet": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.7,
+          "support": 0
+        },
+        "black": {
+          "f1": 0.0889,
+          "precision": 0.0513,
+          "recall": 0.3333,
+          "threshold": 0.35,
+          "support": 6
+        },
+        "chicken": {
+          "f1": 0.1053,
+          "precision": 0.5,
+          "recall": 0.0588,
+          "threshold": 0.75,
+          "support": 17
+        },
+        "strawberry": {
+          "f1": 0.16,
+          "precision": 0.125,
+          "recall": 0.2222,
+          "threshold": 0.45,
+          "support": 9
+        },
+        "cinnamon": {
+          "f1": 0.3333,
+          "precision": 0.25,
+          "recall": 0.5,
+          "threshold": 0.75,
+          "support": 2
+        },
+        "cabbage": {
+          "f1": 0.1429,
+          "precision": 0.1667,
+          "recall": 0.125,
+          "threshold": 0.8,
+          "support": 8
+        },
+        "ketonic": {
+          "f1": 0.1667,
+          "precision": 0.1111,
+          "recall": 0.3333,
+          "threshold": 0.8,
+          "support": 6
+        },
+        "cucumber": {
+          "f1": 0.3333,
+          "precision": 0.3333,
+          "recall": 0.3333,
+          "threshold": 0.8,
+          "support": 3
+        },
+        "estery": {
+          "f1": 0.32,
+          "precision": 0.2667,
+          "recall": 0.4,
+          "threshold": 0.75,
+          "support": 10
+        },
+        "lactonic": {
+          "f1": 0.2174,
+          "precision": 0.1282,
+          "recall": 0.7143,
+          "threshold": 0.2,
+          "support": 7
+        },
+        "currant": {
+          "f1": 0.0976,
+          "precision": 0.0513,
+          "recall": 1.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        "jasmine": {
+          "f1": 0.25,
+          "precision": 0.2,
+          "recall": 0.3333,
+          "threshold": 0.5,
+          "support": 3
+        },
+        "skin": {
+          "f1": 0.0882,
+          "precision": 0.0714,
+          "recall": 0.1154,
+          "threshold": 0.25,
+          "support": 26
+        },
+        "weedy": {
+          "f1": 0.0348,
+          "precision": 0.0183,
+          "recall": 0.3333,
+          "threshold": 0.25,
+          "support": 6
+        },
+        "lavender": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.5,
+          "support": 2
+        },
+        "brandy": {
+          "f1": 0.1986,
+          "precision": 0.1129,
+          "recall": 0.8235,
+          "threshold": 0.1,
+          "support": 17
+        },
+        "raspberry": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        "nut": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 38
+        },
+        "beefy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 39
+        },
+        "terpenic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 29
+        },
+        "cedar": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "bitter": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        "tomato": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 26
+        },
+        "bready": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 29
+        },
+        "popcorn": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "juicy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "bread": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 34
+        },
+        "brothy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        "acidic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 33
+        },
+        "celery": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 27
+        },
+        "herbaceous": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "sandalwood": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        "chemical": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        "licorice": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 10
+        },
+        "ozone": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        "camphor": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 4
+        },
+        "plastic": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 7
+        },
+        "vetiver": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "radish": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "grass": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "hawthorn": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "horseradish": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "malty": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "bergamot": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "leaf": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "chamomile": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "peel": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "orangeflower": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "jammy": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "peppery": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        },
+        "marine": {
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 0
+        }
+      },
+      "top_10_best": [
+        {
+          "label": "sulfur",
+          "f1": 0.7606,
+          "precision": 0.6506,
+          "recall": 0.9153,
+          "threshold": 0.8,
+          "support": 59
+        },
+        {
+          "label": "woody",
+          "f1": 0.722,
+          "precision": 0.7311,
+          "recall": 0.7131,
+          "threshold": 0.55,
+          "support": 122
+        },
+        {
+          "label": "fruity",
+          "f1": 0.6904,
+          "precision": 0.6326,
+          "recall": 0.7598,
+          "threshold": 0.4,
+          "support": 179
+        },
+        {
+          "label": "meaty",
+          "f1": 0.6514,
+          "precision": 0.6,
+          "recall": 0.7125,
+          "threshold": 0.75,
+          "support": 80
+        },
+        {
+          "label": "roasted",
+          "f1": 0.6316,
+          "precision": 0.5405,
+          "recall": 0.7595,
+          "threshold": 0.8,
+          "support": 79
+        },
+        {
+          "label": "pineapple",
+          "f1": 0.6154,
+          "precision": 0.4615,
+          "recall": 0.9231,
+          "threshold": 0.7,
+          "support": 26
+        },
+        {
+          "label": "nutty",
+          "f1": 0.6056,
+          "precision": 0.481,
+          "recall": 0.8172,
+          "threshold": 0.65,
+          "support": 93
+        },
+        {
+          "label": "sweet",
+          "f1": 0.5859,
+          "precision": 0.5321,
+          "recall": 0.6517,
+          "threshold": 0.5,
+          "support": 178
+        },
+        {
+          "label": "sour",
+          "f1": 0.5455,
+          "precision": 0.5,
+          "recall": 0.6,
+          "threshold": 0.65,
+          "support": 15
+        },
+        {
+          "label": "apple",
+          "f1": 0.5385,
+          "precision": 0.4375,
+          "recall": 0.7,
+          "threshold": 0.75,
+          "support": 30
+        }
+      ],
+      "top_10_worst": [
+        {
+          "label": "brothy",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 35
+        },
+        {
+          "label": "acidic",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 33
+        },
+        {
+          "label": "celery",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 27
+        },
+        {
+          "label": "herbaceous",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        {
+          "label": "sandalwood",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 32
+        },
+        {
+          "label": "chemical",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 31
+        },
+        {
+          "label": "licorice",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 10
+        },
+        {
+          "label": "ozone",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 2
+        },
+        {
+          "label": "camphor",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 4
+        },
+        {
+          "label": "plastic",
+          "f1": 0.0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "threshold": 0.35,
+          "support": 7
+        }
+      ]
+    }
+  }
+}
